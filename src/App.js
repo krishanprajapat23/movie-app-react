@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import Movie from "./components/Movie";
@@ -9,13 +8,13 @@ const App = () => {
   const [movies, setMovies] = useState([]);
 
   const API_URL = "http://www.omdbapi.com/?apikey=7581f4b9";
-  const movie1 = {
-    Title: "Spiderman",
-    Year: "2022",
-    imdbID: "tt255456",
-    Type: "movie",
-    Poster: "N/A",
-  };
+  // const movie = {
+  //   Title: "Spiderman",
+  //   Year: "2012",
+  //   imdbID: "tt255456",
+  //   Type: "movie",
+  //   Poster: "https://imgs.search.brave.com/3c2tmbQDHDtufuksc1OU3ZU87NVbr22xoD7_7YMDa1Q/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pbWFn/ZS50bWRiLm9yZy90/L3Avb3JpZ2luYWwv/d1pHbGFNeEJBakNJ/WUx6eURXdm9jYW9O/b29aLmpwZw",
+  // };
 
   useEffect(() => {
     searchMovies("Avengers");
